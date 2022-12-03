@@ -53,10 +53,4 @@
   		return mysqli_affected_rows($conn);
   	}
 
-  	function registrasi($user, $password)
-  	{
-  		global $conn;
-  		$query = "INSERT INTO user VALUES('','$user','$password')";
-  		mysqli_query($conn,$query);
-  		return mysqli_affected_rows($conn);
-  	}
+  	
